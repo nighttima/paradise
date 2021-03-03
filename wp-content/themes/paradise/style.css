@@ -1,0 +1,347 @@
+/*
+Theme Name: Paradise
+Theme URI: https://wordpress.org/themes/twentynineteen/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Our 2019 default theme is designed to show off the power of the block editor. It features custom styles for all the default blocks, and is built so that what you see in the editor looks like what you'll see on your website. Twenty Nineteen is designed to be adaptable to a wide range of websites, whether you’re running a photo blog, launching a new business, or supporting a non-profit. Featuring ample whitespace and modern sans-serif headlines paired with classic serif body text, it's built to be beautiful on all screen sizes.
+Requires at least: 4.9.6
+Requires PHP: 5.2.4
+Version: 1.9
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentynineteen
+Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready, block-patterns
+*/
+@font-face {
+    font-family: 'Tahoma';
+    src: url('assets/fonts/tahoma.eot');
+    src: local('☺'), url('assets/fonts/tahoma.woff') format('woff'), 
+    url('assets/fonts/tahoma.ttf') format('truetype'), 
+    url('assets/fonts/tahoma.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Обнуление*/
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+nav,footer,header,aside,section{display:block;}
+input,button,textarea{font-family:inherit;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+input:active, :focus {outline:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+/*--------------------*/
+
+body{
+    font-family: "Arial_MT";
+    position: relative;
+}
+.row{
+    display: flex;  
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.max-width{
+    width: 100%;
+    height: 1700px;
+    position: relative;
+    overflow:  hidden;
+    background-color: #8894a2;
+    background-image: url(images/background-shine.png);
+    background-position: center center;
+}
+/***************************/
+/*---------Header----------*/
+/***************************/
+.header-conteiner{
+    width: 100%;
+    height: auto;
+}
+.header-top-shadow{
+    max-width: 1437px;
+    width: 100%;
+    height: 324px;
+    position: absolute;
+    top 0%;
+    left: 0%;
+    right: 0%;
+    margin: 0 auto;
+    background-image: url(images/header-top-shadow.png);
+    background-position: center center;
+    z-index: 3;
+}
+.header-main-shadow{
+    max-width: 1243px;
+    width: 100%;
+    height: 768px;
+    position: absolute;
+    top 0%;
+    left: 0%;
+    right: 0%;
+    margin: 0 auto;
+    background-image: url(images/header-shadow.png);
+    background-position: center center;
+    z-index: 2;
+}
+header{
+    max-width: 1200px;
+    width: 100%;
+    height: 831px;
+    margin: 0 auto;
+/*    overflow: hidden;*/
+    position: relative;
+    background: url(images/header-background.png);
+    background-position: center center;
+}
+.logo-conteiner{
+    position: relative;
+    width: 316px;
+    height: 116px;
+    z-index: 10;
+}
+.logo-background{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.4;
+    z-index: 2;
+}
+.logo{
+    position: absolute;
+    top: 47px;
+    left: 66px;
+    z-index: 11;
+}
+.header-left-flowers{
+    position: absolute;
+    left: 0px;
+    bottom: 63px;
+    z-index: 4;
+}
+.header-right-flowers{
+    position: absolute;
+    right: 0px;
+    bottom: 63px;
+    z-index: 4;
+}
+
+.header-woman{
+    position: absolute;
+    bottom: 184px;
+    left: 35%;
+    z-index: 4;
+}
+.header-girl{
+    position: absolute;
+    bottom: 183px;
+    left: 18%;
+    z-index: 5;
+}
+.header-package{
+    position: absolute;
+    top: 501px;
+    left: 54%;
+    z-index: 5; 
+}
+.header-flower-left{
+    position: absolute;
+    top: 174px;
+    left: 10%;
+    z-index: 4; 
+}
+.header-flower-right{
+    position: absolute;
+    top: 253px;
+    right: 2%;
+    z-index: 3; 
+}
+.header-decore-left{
+    position: absolute;
+    top: 59px;
+    left: -107px;
+    z-index: 3;
+}
+.header-decore-center{
+    position: absolute;
+    top: 249px;
+    left: 15%;
+    width: 77%;
+    height: auto;
+    filter: grayscale(0.39) hue-rotate(114deg) opacity(0.43) brightness(1.6) contrast(1.4) saturate(0) invert(1);
+    opacity: 0.5;
+    z-index: 2;
+}
+.big-logo-conteiner{
+    position: absolute;
+    top: 323px;
+    left: 29%;
+    width: 563px;
+    height: 235px;
+}
+.light-secondary{
+    position: absolute;
+    top: 9px;
+    left: -117px;
+    z-index: 10;
+}
+.light-primary{
+    position: absolute;
+    top: -14px;
+    left: 36px;
+    z-index: 11;
+}
+.big-logo{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 12;
+}
+.header-conteiner-text{
+    margin: 552px auto 0px auto;
+    color: #3f4347;
+    font-family: "Tahoma";
+    font-size: 16px;
+    letter-spacing: 0.81px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.list-conteiner{
+    position: relative;
+    z-index: 20;
+    max-width: 490px;
+    width: auto;
+    min-height: 37px;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255, 255, 255, .6),rgba(255, 255, 255, .6),rgba(255, 255, 255, .6),rgba(255,0,0,0));
+    text-align: center;
+}
+.top-line-list{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    width: 100%;
+    height: 8px;
+}
+.bottom-line-list{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    width: 100%;
+    height: 7px;
+}
+ul.languages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+}
+ul.languages li{
+    display: inline;
+    list-style: none;
+/*    padding: 0px 0px 0px 8px;*/
+    color: #3f4347;
+    font-family: "Tahoma";
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 37px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+ul.languages li::before {
+    content: "|";
+    margin: 6px;
+}
+ul.languages li:first-child::before {
+    content: "";
+}
+
+@media screen and (max-width: 400px){
+    ul.languages li:last-child::before {
+        content: "";
+    }  
+}
+
+@media screen and (max-width: 1269px) {
+    .big-logo-conteiner{
+        position: absolute;
+        top: 323px;
+        left: 0%;
+        right: 0%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .header-left-flowers{
+        display: none;
+    }
+    .header-right-flowers{
+        display: none;
+    }
+    .header-girl{
+        left: 2%;
+    }
+    .header-package{
+        left: 66%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .header-package{
+        display: none;
+    }
+    .header-flower-right{
+        display: none;
+    }
+    .header-woman{
+        left: 55%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .header-woman{
+        left: auto;
+        right: 2%;
+    }
+}
+@media screen and (max-width: 580px) {
+    .big-logo-conteiner{
+        display: none;
+    }
+    .header-woman{
+        width: 260px;
+        height: auto;
+    }
+    .header-girl{
+        width: 320px;
+        height: auto;
+    }
+    .logo-conteiner{
+        width: 250px;
+        margin: 0 auto;
+    }
+    .logo-background{
+    position: absolute;
+    top: 0px;
+    left: -66px;
+    opacity: 0.4;
+    z-index: 2;
+    }
+    .logo{
+        position: absolute;
+        top: 47px;
+        left: 0px;
+        z-index: 11;
+    }
+}
