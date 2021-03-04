@@ -77,7 +77,8 @@ $table_prefix = 'wp_';
  * @link https://ru.wordpress.org/support/article/debugging-in-wordpress/
  */
 define( 'WP_DEBUG', false );
-
+define( 'WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] );
+define( 'WP_HOME', 'http://' . $_SERVER['HTTP_HOST'] );
 /* Это всё, дальше не редактируем. Успехов! */
 
 /** Абсолютный путь к директории WordPress. */
